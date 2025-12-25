@@ -19,7 +19,7 @@ export default function Footer() {
                   className="object-contain"
                 />
               </div>
-              <span className="font-bold text-lg">NCRB</span>
+              <span className="font-bold text-lg">Natural Capital ReBank</span>
             </div>
             <p className="text-gray-400 text-sm mb-4">
               Tokenizing nature into an investable asset class through blockchain-powered verification and institutional-grade infrastructure.
