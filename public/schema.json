@@ -1,0 +1,61 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Natural Capital ReBank",
+  "alternateName": "NCRB",
+  "url": "https://naturalcapitalrebank.com",
+  "logo": "https://naturalcapitalrebank.com/images/ncrb-logo.png",
+  "description": "Blockchain-powered infrastructure transforming natural capital credits and ecosystem services into transparent, liquid digital instruments for institutional investors.",
+  "foundingDate": "2024",
+  "sameAs": [
+    "https://www.linkedin.com/company/natural-capital-rebank/"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "Investor Relations",
+      "url": "https://naturalcapitalrebank.com/investors"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "General Inquiries",
+      "url": "https://naturalcapitalrebank.com/contact"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "Place",
+      "name": "United States"
+    },
+    {
+      "@type": "Place",
+      "name": "Europe"
+    },
+    {
+      "@type": "Place",
+      "name": "Asia-Pacific"
+    }
+  ],
+  "knowsAbout": [
+    "Natural Capital",
+    "Carbon Credits",
+    "Blockchain Technology",
+    "Tokenization",
+    "ESG Investing",
+    "Climate Finance",
+    "Biodiversity",
+    "Sustainable Finance"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Natural Capital Tokenization Platform",
+      "description": "Blockchain infrastructure for tokenizing natural capital assets including carbon credits, biodiversity credits, and ecosystem services"
+    }
+  }
+}

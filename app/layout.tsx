@@ -11,9 +11,71 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Natural Capital ReBank - Tokenizing Nature into an Investable Asset Class",
+  metadataBase: new URL('https://naturalcapitalrebank.com'),
+  title: {
+    default: 'Natural Capital ReBank - Tokenizing Nature into an Investable Asset Class',
+    template: '%s | Natural Capital ReBank',
+  },
   description: "NCRB is a blockchain-powered infrastructure that transforms natural capital credits and ecosystem services into transparent, liquid digital instruments for institutional investors.",
-  keywords: "natural capital, carbon credits, tokenization, blockchain, climate finance, biodiversity, ESG, sustainable finance, RWA",
+  keywords: [
+    'natural capital',
+    'carbon credits',
+    'tokenization',
+    'blockchain',
+    'climate finance',
+    'biodiversity credits',
+    'ESG investing',
+    'sustainable finance',
+    'RWA tokenization',
+    'environmental assets',
+    'carbon markets',
+    'ecosystem services',
+    'climate tech',
+    'green finance',
+    'impact investing',
+  ],
+  authors: [{ name: 'Natural Capital ReBank' }],
+  creator: 'Natural Capital ReBank',
+  publisher: 'Natural Capital ReBank',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://naturalcapitalrebank.com',
+    title: 'Natural Capital ReBank - Tokenizing Nature into an Investable Asset Class',
+    description: 'Blockchain-powered infrastructure transforming natural capital into transparent, liquid digital instruments. $10T market opportunity in carbon, biodiversity, and ecosystem services.',
+    siteName: 'Natural Capital ReBank',
+    images: [
+      {
+        url: '/images/ncrb-logo.png',
+        width: 845,
+        height: 340,
+        alt: 'Natural Capital ReBank Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Natural Capital ReBank - Tokenizing Nature',
+    description: 'Blockchain-powered natural capital tokenization platform. Protecting $2.7T at-risk value, unlocking $10T opportunity.',
+    images: ['/images/ncrb-logo.png'],
+    creator: '@NCRBank',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -26,6 +88,15 @@ export const metadata: Metadata = {
       { rel: 'manifest', url: '/site.webmanifest' },
     ],
   },
+  verification: {
+    // google: 'your-google-verification-code',
+    // yandex: 'your-yandex-verification-code',
+    // bing: 'your-bing-verification-code',
+  },
+  alternates: {
+    canonical: 'https://naturalcapitalrebank.com',
+  },
+  category: 'finance',
 };
 
 export default function RootLayout({
@@ -35,6 +106,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Natural Capital ReBank",
+              "alternateName": "NCRB",
+              "url": "https://naturalcapitalrebank.com",
+              "logo": "https://naturalcapitalrebank.com/images/ncrb-logo.png",
+              "description": "Blockchain-powered infrastructure transforming natural capital credits and ecosystem services into transparent, liquid digital instruments.",
+              "sameAs": ["https://www.linkedin.com/company/natural-capital-rebank/"],
+            }),
+          }}
+        />
+      </head>
       <body className={`${inter.variable} antialiased`}>
         <GoogleAnalytics />
         <Navigation />

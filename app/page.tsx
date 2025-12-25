@@ -1,5 +1,24 @@
 import Link from "next/link";
 import Card from "@/components/Card";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Natural Capital ReBank - Tokenizing Nature into an Investable Asset Class",
+  description: "NCRB transforms natural capital into transparent, liquid digital assets. Protecting $2.7T at-risk value, unlocking $10T market opportunity through blockchain-powered verification.",
+  openGraph: {
+    title: "Natural Capital ReBank - Tokenizing Nature",
+    description: "Blockchain-powered platform transforming carbon credits, biodiversity, and ecosystem services into institutional-grade digital assets.",
+    url: "https://naturalcapitalrebank.com",
+    images: [
+      {
+        url: "/images/ncrb-logo.png",
+        width: 845,
+        height: 340,
+        alt: "NCRB - Natural Capital Tokenization Platform",
+      },
+    ],
+  },
+};
 
 export default function Home() {
   return (
