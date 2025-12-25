@@ -38,3 +38,6 @@ next-env.d.ts
 
 # temp
 temp-next/
+
+# Vercel
+.vercel
