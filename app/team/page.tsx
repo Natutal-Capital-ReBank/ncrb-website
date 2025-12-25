@@ -117,7 +117,11 @@ export default function Team() {
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover object-top"
+                    className={`object-cover ${
+                      member.name === "Zaki Alam"
+                        ? "object-top"
+                        : "object-[center_20%]"
+                    }`}
                   />
                 </div>
                 <div className="p-8">
@@ -160,7 +164,7 @@ export default function Team() {
                       </a>
                     </div>
                   </div>
-                  <p className="text-base font-semibold text-gray-700 mb-1">
+                  <p className="text-base font-semibold text-gray-700 mb-0.5">
                     {member.role}
                   </p>
                   <p className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600 mb-4">
