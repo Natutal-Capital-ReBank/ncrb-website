@@ -120,6 +120,8 @@ export default function Team() {
                     className={`object-cover ${
                       member.name === "Zaki Alam"
                         ? "object-top"
+                        : member.name === "Dr. Rubens Talukder"
+                        ? "object-[center_30%]"
                         : "object-[center_20%]"
                     }`}
                   />
