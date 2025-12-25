@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://naturalcapitalrebank.com",
     images: [
       {
-        url: "/images/ncrb-logo.png",
+        url: "/images/ncrb-icon.png",
         width: 845,
         height: 340,
         alt: "NCRB - Natural Capital Tokenization Platform",
