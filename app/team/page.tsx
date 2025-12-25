@@ -121,8 +121,8 @@ export default function Team() {
                       member.name === "Zaki Alam"
                         ? "object-top"
                         : member.name === "Dr. Rubens Talukder"
-                        ? "object-[center_30%]"
-                        : "object-[center_20%]"
+                        ? "object-[center_15%]"
+                        : "object-[center_25%]"
                     }`}
                   />
                 </div>
