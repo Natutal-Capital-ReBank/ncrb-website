@@ -39,7 +39,8 @@ export default function Team() {
   const team = [
     {
       name: "Dr. Rubens Talukder",
-      role: "Managing Partner, Finance",
+      role: "Managing Partner",
+      specialty: "Finance",
       image: "/images/Rubens.png",
       bio: "Deep expertise in sustainable finance and institutional investment strategies, with a proven track record in ESG fund management and nature-based solutions across global markets.",
       linkedin: "https://linkedin.com/in/rubens-t-2145982a",
@@ -47,7 +48,8 @@ export default function Team() {
     },
     {
       name: "Zaki Alam",
-      role: "Managing Partner, Technology",
+      role: "Managing Partner",
+      specialty: "Technology",
       image: "/images/Zaki.jpg",
       bio: "Pioneer in blockchain architecture and tokenization frameworks, bringing enterprise-grade technical leadership from DeFi and real-world asset markets with institutional security standards.",
       linkedin: "https://linkedin.com/in/ZakiAlam",
@@ -55,7 +57,8 @@ export default function Team() {
     },
     {
       name: "Arno Neumann",
-      role: "Managing Partner, Environmental Science",
+      role: "Managing Partner",
+      specialty: "Environmental Science",
       image: "/images/Arno.png",
       bio: "Leading authority in natural capital accounting and ecosystem services valuation, with extensive experience in carbon markets, regulatory compliance, and environmental impact assessment.",
       linkedin: "https://linkedin.com/in/arno-neumann-a6913b19",
@@ -157,8 +160,11 @@ export default function Team() {
                       </a>
                     </div>
                   </div>
-                  <p className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600 mb-4">
+                  <p className="text-base font-semibold text-gray-700 mb-1">
                     {member.role}
+                  </p>
+                  <p className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600 mb-4">
+                    {member.specialty}
                   </p>
                   <p className="text-gray-600 leading-relaxed">
                     {member.bio}
