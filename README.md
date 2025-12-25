@@ -144,8 +144,28 @@ ncrb-website/
 3. Deploy with default Next.js settings
 
 ### Environment Variables
-Currently no environment variables required. Future additions may include:
-- `NEXT_PUBLIC_GA_ID` - Google Analytics
+
+**Google Analytics (Optional):**
+
+To enable Google Analytics tracking:
+
+1. Copy `.env.example` to `.env.local`:
+   ```bash
+   cp .env.example .env.local
+   ```
+
+2. Get your GA4 Measurement ID from [Google Analytics](https://analytics.google.com/)
+   - Create a GA4 property if you don't have one
+   - Copy your Measurement ID (format: `G-XXXXXXXXXX`)
+
+3. Add to `.env.local`:
+   ```
+   NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+   ```
+
+4. For Vercel deployment, add the environment variable in project settings
+
+**Future Environment Variables:**
 - `EMAIL_API_KEY` - Contact form backend
 - `CMS_API_URL` - Content management system
 
