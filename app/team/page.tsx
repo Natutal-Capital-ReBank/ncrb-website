@@ -39,24 +39,30 @@ export default function Team() {
   const team = [
     {
       name: "Dr. Rubens Talukder",
-      role: "Managing Partner, Finance",
+      role: "Managing Partner",
+      specialty: "Finance",
       image: "/images/Rubens.png",
+      imagePosition: "object-top",
       bio: "Deep expertise in sustainable finance and institutional investment strategies, with a proven track record in ESG fund management and nature-based solutions across global markets.",
       linkedin: "https://linkedin.com/in/rubens-t-2145982a",
       twitter: "https://x.com/RubensTalukder",
     },
     {
       name: "Zaki Alam",
-      role: "Managing Partner, Technology",
+      role: "Managing Partner",
+      specialty: "Technology",
       image: "/images/Zaki.jpg",
+      imagePosition: "object-top",
       bio: "Pioneer in blockchain architecture and tokenization frameworks, bringing enterprise-grade technical leadership from DeFi and real-world asset markets with institutional security standards.",
       linkedin: "https://linkedin.com/in/ZakiAlam",
       twitter: "https://x.com/AlamZaki",
     },
     {
       name: "Arno Neumann",
-      role: "Managing Partner, Environmental Science",
+      role: "Managing Partner",
+      specialty: "Environmental Science",
       image: "/images/Arno.png",
+      imagePosition: "object-top",
       bio: "Leading authority in natural capital accounting and ecosystem services valuation, with extensive experience in carbon markets, regulatory compliance, and environmental impact assessment.",
       linkedin: "https://linkedin.com/in/arno-neumann-a6913b19",
       twitter: "https://x.com/ArnoNeumann",
@@ -114,7 +120,7 @@ export default function Team() {
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover"
+                    className={`object-cover ${member.imagePosition}`}
                   />
                 </div>
                 <div className="p-8">
@@ -127,11 +133,11 @@ export default function Team() {
                         href={member.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-9 h-9 rounded-lg bg-blue-600 hover:bg-blue-700 flex items-center justify-center transition-colors group"
+                        className="w-7 h-7 rounded-lg bg-blue-600 hover:bg-blue-700 flex items-center justify-center transition-colors group"
                         aria-label={`${member.name} LinkedIn Profile`}
                       >
                         <svg
-                          className="w-5 h-5 text-white"
+                          className="w-3.5 h-3.5 text-white"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           aria-hidden="true"
@@ -143,11 +149,11 @@ export default function Team() {
                         href={member.twitter}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-9 h-9 rounded-lg bg-gray-900 hover:bg-gray-700 flex items-center justify-center transition-colors group"
+                        className="w-7 h-7 rounded-lg bg-gray-900 hover:bg-gray-700 flex items-center justify-center transition-colors group"
                         aria-label={`${member.name} X Profile`}
                       >
                         <svg
-                          className="w-4 h-4 text-white"
+                          className="w-3 h-3 text-white"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           aria-hidden="true"
@@ -157,8 +163,11 @@ export default function Team() {
                       </a>
                     </div>
                   </div>
-                  <p className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600 mb-4">
+                  <p className="text-lg font-semibold text-gray-700 mb-0">
                     {member.role}
+                  </p>
+                  <p className="text-base font-semibold text-green-600 mb-4">
+                    {member.specialty}
                   </p>
                   <p className="text-gray-600 leading-relaxed">
                     {member.bio}
