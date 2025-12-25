@@ -98,9 +98,9 @@ export default function Home() {
       </section>
 
       {/* Problem Section - Modern Card Layout */}
-      <section className="py-20 md:py-32 relative">
+      <section className="py-12 md:py-16 relative">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fadeInUp">
+          <div className="text-center mb-12 animate-fadeInUp">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               The Natural Capital Crisis
             </h2>
@@ -153,9 +153,9 @@ export default function Home() {
       </section>
 
       {/* Solution Section - Grid Layout */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-gray-50 to-white">
+      <section className="py-12 md:py-16 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fadeInUp">
+          <div className="text-center mb-12 animate-fadeInUp">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               The NCRB Platform
             </h2>
@@ -210,7 +210,7 @@ export default function Home() {
       </section>
 
       {/* Why Now Section */}
-      <section className="py-20 md:py-32">
+      <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -251,7 +251,7 @@ export default function Home() {
       </section>
 
       {/* Investment CTA Section */}
-      <section className="py-20 md:py-32 relative overflow-hidden">
+      <section className="py-12 md:py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-green-900 via-blue-900 to-teal-900"></div>
 
         <div className="relative container mx-auto px-4">
