@@ -8,13 +8,11 @@ on:
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  VERCEL_SCOPE: ${{ secrets.VERCEL_SCOPE }}
 
 permissions:
-  contents: write
+  contents: read
   deployments: write
-  pull-requests: write
-  issues: write
-  statuses: write
 
 jobs:
   deploy:
@@ -25,9 +23,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: ${{ github.ref }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -51,10 +46,5 @@ jobs:
           echo "url=$url" >> $GITHUB_OUTPUT
           echo "Production deployment: $url"
 
-      - name: Create Deployment Success Comment
-        if: success()
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const url = '${{ steps.deploy.outputs.url }}';
-            console.log(`✅ Production deployment successful: ${url}`);
+      - name: Display Production URL
+        run: echo "✅ Production deployed to ${{ steps.deploy.outputs.url }}"

@@ -156,6 +156,7 @@ The project includes GitHub Actions workflows for automated deployment to Vercel
    - `VERCEL_TOKEN` - Create at [Vercel Tokens](https://vercel.com/account/tokens)
    - `VERCEL_ORG_ID` - Found in Vercel Organization Settings
    - `VERCEL_PROJECT_ID` - Found in Vercel Project Settings
+   - `VERCEL_SCOPE` - Your team slug or username (found in Vercel dashboard URL: `vercel.com/<SCOPE>/...`)
 
 3. **Automated Deployments**
 
@@ -205,6 +206,7 @@ Required GitHub repository secrets for automated deployments:
 - `VERCEL_TOKEN` - Vercel API authentication token
 - `VERCEL_ORG_ID` - Your Vercel organization ID
 - `VERCEL_PROJECT_ID` - Your Vercel project ID
+- `VERCEL_SCOPE` - Your team slug or username
 
 **Future Environment Variables:**
 - `EMAIL_API_KEY` - Contact form backend
