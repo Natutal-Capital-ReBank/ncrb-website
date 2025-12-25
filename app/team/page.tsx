@@ -114,7 +114,7 @@ export default function Team() {
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 <div className="p-8">
@@ -127,11 +127,11 @@ export default function Team() {
                         href={member.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-9 h-9 rounded-lg bg-blue-600 hover:bg-blue-700 flex items-center justify-center transition-colors group"
+                        className="w-7 h-7 rounded-lg bg-blue-600 hover:bg-blue-700 flex items-center justify-center transition-colors group"
                         aria-label={`${member.name} LinkedIn Profile`}
                       >
                         <svg
-                          className="w-5 h-5 text-white"
+                          className="w-3.5 h-3.5 text-white"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           aria-hidden="true"
@@ -143,11 +143,11 @@ export default function Team() {
                         href={member.twitter}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-9 h-9 rounded-lg bg-gray-900 hover:bg-gray-700 flex items-center justify-center transition-colors group"
+                        className="w-7 h-7 rounded-lg bg-gray-900 hover:bg-gray-700 flex items-center justify-center transition-colors group"
                         aria-label={`${member.name} X Profile`}
                       >
                         <svg
-                          className="w-4 h-4 text-white"
+                          className="w-3 h-3 text-white"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           aria-hidden="true"
