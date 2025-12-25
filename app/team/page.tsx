@@ -42,7 +42,7 @@ export default function Team() {
       role: "Managing Partner",
       specialty: "Finance",
       image: "/images/Rubens.png",
-      imagePosition: "object-[center_10%]",
+      imagePosition: "object-[center_15%]",
       bio: "Deep expertise in sustainable finance and institutional investment strategies, with a proven track record in ESG fund management and nature-based solutions across global markets.",
       linkedin: "https://linkedin.com/in/rubens-t-2145982a",
       twitter: "https://x.com/RubensTalukder",
@@ -62,7 +62,7 @@ export default function Team() {
       role: "Managing Partner",
       specialty: "Environmental Science",
       image: "/images/Arno.png",
-      imagePosition: "object-[center_30%]",
+      imagePosition: "object-[center_35%]",
       bio: "Leading authority in natural capital accounting and ecosystem services valuation, with extensive experience in carbon markets, regulatory compliance, and environmental impact assessment.",
       linkedin: "https://linkedin.com/in/arno-neumann-a6913b19",
       twitter: "https://x.com/ArnoNeumann",
@@ -163,7 +163,7 @@ export default function Team() {
                       </a>
                     </div>
                   </div>
-                  <p className="text-base font-semibold text-gray-700 mb-0.5">
+                  <p className="text-base font-semibold text-gray-700 mb-0">
                     {member.role}
                   </p>
                   <p className="text-lg font-semibold text-green-600 mb-4">
