@@ -62,7 +62,7 @@ export default function Team() {
       role: "Managing Partner",
       specialty: "Environmental Science",
       image: "/images/Arno.png",
-      imagePosition: "object-[center_15%]",
+      imagePosition: "object-top",
       bio: "Leading authority in natural capital accounting and ecosystem services valuation, with extensive experience in carbon markets, regulatory compliance, and environmental impact assessment.",
       linkedin: "https://linkedin.com/in/arno-neumann-a6913b19",
       twitter: "https://x.com/ArnoNeumann",
