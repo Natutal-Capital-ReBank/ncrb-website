@@ -29,7 +29,7 @@ export default function ProblemMarket() {
           <div className="max-w-4xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What is Natural Capital?</h2>
             <p className="text-lg text-gray-600 mb-6">
-              Natural capital is the world's stock of natural resources including geology, soils, air, water, and all living organisms. These assets provide essential ecosystem services that enable economic activity and human wellbeing.
+              Natural capital is the world&apos;s stock of natural resources including geology, soils, air, water, and all living organisms. These assets provide essential ecosystem services that enable economic activity and human wellbeing.
             </p>
             <p className="text-lg text-gray-600">
               Despite supporting over 50% of global GDP ($44 trillion annually), natural capital is chronically undervalued in conventional markets, leading to degradation, climate risk, and systemic economic instability.

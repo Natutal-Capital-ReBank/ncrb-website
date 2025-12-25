@@ -37,7 +37,7 @@ export default function Contact() {
               Get In Touch
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-              Whether you're an investor, corporate buyer, project developer, or potential partner—we'd love to hear from you.
+              Whether you&apos;re an investor, corporate buyer, project developer, or potential partner—we&apos;d love to hear from you.
             </p>
           </div>
         </div>
@@ -244,7 +244,7 @@ export default function Contact() {
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Initial Response</h3>
               <p className="text-sm text-gray-600">
-                We'll review your inquiry and respond within 24-48 hours with next steps.
+                We&apos;ll review your inquiry and respond within 24-48 hours with next steps.
               </p>
             </div>
 
