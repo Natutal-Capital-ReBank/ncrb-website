@@ -139,9 +139,42 @@ ncrb-website/
 ## Deployment
 
 ### Vercel (Recommended)
-1. Push code to GitHub repository
-2. Import project in Vercel dashboard
-3. Deploy with default Next.js settings
+
+The project includes GitHub Actions workflows for automated deployment to Vercel.
+
+#### Initial Setup
+
+1. **Create Vercel Project**
+   - Push code to GitHub repository
+   - Import project in [Vercel dashboard](https://vercel.com/new)
+   - Deploy with default Next.js settings
+
+2. **Configure GitHub Secrets**
+
+   Add the following secrets to your GitHub repository (Settings → Secrets and variables → Actions):
+
+   - `VERCEL_TOKEN` - Create at [Vercel Tokens](https://vercel.com/account/tokens)
+   - `VERCEL_ORG_ID` - Found in Vercel Organization Settings
+   - `VERCEL_PROJECT_ID` - Found in Vercel Project Settings
+
+3. **Automated Deployments**
+
+   The workflows will automatically deploy:
+   - **Development**: Pushes to `dev` or `develop` branches → Preview deployment
+   - **Production**: Pushes to `main` or `master` branches → Production deployment
+
+#### Manual Deployment
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy to preview
+vercel
+
+# Deploy to production
+vercel --prod
+```
 
 ### Environment Variables
 
@@ -164,6 +197,14 @@ To enable Google Analytics tracking:
    ```
 
 4. For Vercel deployment, add the environment variable in project settings
+
+**Vercel Deployment (GitHub Actions):**
+
+Required GitHub repository secrets for automated deployments:
+
+- `VERCEL_TOKEN` - Vercel API authentication token
+- `VERCEL_ORG_ID` - Your Vercel organization ID
+- `VERCEL_PROJECT_ID` - Your Vercel project ID
 
 **Future Environment Variables:**
 - `EMAIL_API_KEY` - Contact form backend
