@@ -1,6 +1,8 @@
 {
   "name": "ncrb-website",
   "version": "0.1.0",
+  "author": "Natural Capital ReBank (NCRB)",
+  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
