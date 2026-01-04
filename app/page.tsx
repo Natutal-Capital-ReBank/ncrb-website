@@ -27,6 +27,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         {/* Background with gradient and subtle pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-green-900 via-blue-900 to-teal-900"></div>
+        <div className="absolute inset-0 bg-[url('/images/pattern-60.svg')] opacity-20"></div>
 
         <div className="relative container mx-auto px-4 py-24 md:py-32">
           <div className="text-center mb-16">
@@ -107,13 +108,11 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Decorative floating elements */}
-        <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <div className="absolute top-20 left-10 text-6xl animate-float">🌱</div>
-          <div className="absolute top-40 right-20 text-6xl animate-float" style={{ animationDelay: '1s' }}>🌳</div>
-          <div className="absolute bottom-20 left-1/4 text-6xl animate-float" style={{ animationDelay: '2s' }}>🌊</div>
-          <div className="absolute bottom-40 right-1/3 text-6xl animate-float" style={{ animationDelay: '3s' }}>🦋</div>
-        </div>
+        {/* Floating Environmental Elements */}
+        <div className="absolute top-20 left-4 md:left-10 text-4xl md:text-6xl opacity-20 animate-bounce">🌿</div>
+        <div className="absolute top-40 right-4 md:right-20 text-3xl md:text-4xl opacity-30 animate-pulse">🦋</div>
+        <div className="absolute bottom-20 left-4 md:left-20 text-4xl md:text-5xl opacity-25 animate-bounce delay-1000">🌳</div>
+        <div className="absolute bottom-10 md:bottom-20 right-4 md:right-20 text-4xl md:text-5xl opacity-20 animate-pulse" style={{ animationDelay: '1.5s' }}>🌊</div>
       </section>
 
       {/* Problem Section - Modern Card Layout */}
