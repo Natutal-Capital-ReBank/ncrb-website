@@ -27,6 +27,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         {/* Background with gradient and subtle pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-green-900 via-blue-900 to-teal-900"></div>
+        <div className="absolute inset-0 bg-[url('/images/pattern-60.svg')] opacity-20"></div>
 
         <div className="relative container mx-auto px-4 py-24 md:py-32">
           <div className="text-center mb-16">
@@ -101,19 +102,17 @@ export default function Home() {
               </div>
               <div className="flex items-center">
                 <span className="mr-2">✓</span>
-                Multi-Asset Natural Capital
+                11 Asset Types with Extensible Architecture
               </div>
             </div>
           </div>
         </div>
 
-        {/* Decorative floating elements */}
-        <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <div className="absolute top-20 left-10 text-6xl animate-float">🌱</div>
-          <div className="absolute top-40 right-20 text-6xl animate-float" style={{ animationDelay: '1s' }}>🌳</div>
-          <div className="absolute bottom-20 left-1/4 text-6xl animate-float" style={{ animationDelay: '2s' }}>🌊</div>
-          <div className="absolute bottom-40 right-1/3 text-6xl animate-float" style={{ animationDelay: '3s' }}>🦋</div>
-        </div>
+        {/* Floating Environmental Elements */}
+        <div className="absolute top-20 left-4 md:left-10 text-4xl md:text-6xl opacity-20 animate-bounce">🌿</div>
+        <div className="absolute top-40 right-4 md:right-20 text-3xl md:text-4xl opacity-30 animate-pulse">🦋</div>
+        <div className="absolute bottom-20 left-4 md:left-20 text-4xl md:text-5xl opacity-25 animate-bounce delay-1000">🌳</div>
+        <div className="absolute bottom-10 md:bottom-20 right-4 md:right-20 text-4xl md:text-5xl opacity-20 animate-pulse" style={{ animationDelay: '1.5s' }}>🌊</div>
       </section>
 
       {/* Problem Section - Modern Card Layout */}
@@ -223,6 +222,69 @@ export default function Home() {
                 <h4 className="font-semibold text-white mb-2 text-lg">Instant Liquidity</h4>
                 <p className="text-teal-100 text-sm">Fractional ownership and instant settlement for global investors</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Supported Asset Types Section */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Supported Asset Types
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Our multi-asset platform targets <span className="font-bold text-green-600">$1.5 trillion</span> in addressable natural capital markets across 10 distinct asset categories.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+            {[
+              { icon: '🌱', title: 'Carbon Credits', unit: 'tCO2e', market: '$850B', addressable: '$425B', desc: 'Verified carbon offset credits' },
+              { icon: '♻️', title: 'Plastic Credits', unit: 'kg', market: '$150B', addressable: '$75B', desc: 'Plastic waste removal credits' },
+              { icon: '🌾', title: 'Nitrogen Credits', unit: 'kg N', market: '$80B', addressable: '$24B', desc: 'Nitrogen pollution reduction' },
+              { icon: '💧', title: 'Phosphorus Credits', unit: 'kg P', market: '$60B', addressable: '$18B', desc: 'Phosphorus runoff reduction' },
+              { icon: '🚜', title: 'Agricultural Land', unit: 'hectares', market: '$12T', addressable: '$360B', desc: 'Agricultural land parcels' },
+              { icon: '⛏️', title: 'Mining Rights', unit: 'hectares', market: '$1.5T', addressable: '$150B', desc: 'Mining rights & mineral deposits' },
+              { icon: '💦', title: 'Water Rights', unit: 'm³', market: '$350B', addressable: '$105B', desc: 'Water usage rights' },
+              { icon: '⚡', title: 'Renewable Energy', unit: 'MWh', market: '$200B', addressable: '$100B', desc: 'Renewable energy credits' },
+              { icon: '🌲', title: 'Forestry', unit: 'hectares', market: '$800B', addressable: '$80B', desc: 'Forestry & timber rights' },
+              { icon: '🦋', title: 'Biodiversity Credits', unit: 'hectares', market: '$600B', addressable: '$180B', desc: 'Biodiversity offset credits' }
+            ].map((asset, idx) => (
+              <div key={idx} className="bg-white rounded-2xl shadow-lg p-6 card-hover border border-gray-100 text-center">
+                <div className="text-5xl mb-3">{asset.icon}</div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{asset.title}</h3>
+                <div className="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium mb-3">
+                  {asset.unit}
+                </div>
+                <div className="mb-3">
+                  <div className="text-sm text-gray-500">Market Size</div>
+                  <div className="text-xl font-bold text-green-600">{asset.market}</div>
+                </div>
+                <div className="mb-3">
+                  <div className="text-sm text-gray-500">NCRB Target</div>
+                  <div className="text-lg font-semibold text-blue-600">{asset.addressable}</div>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed">{asset.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12 space-y-4">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-xl shadow-lg">
+              <span className="text-2xl font-bold">$16.5T+</span>
+              <span className="text-sm">Total Market Size</span>
+              <span className="mx-3 text-white/50">|</span>
+              <span className="text-2xl font-bold">$1.5T+</span>
+              <span className="text-sm">NCRB Addressable</span>
+              <span className="mx-3 text-white/50">|</span>
+              <span className="text-2xl font-bold">$15B</span>
+              <span className="text-sm">Year 5 Target (1%)</span>
+            </div>
+            <div className="inline-block bg-white px-6 py-3 rounded-xl shadow-md border border-gray-200">
+              <span className="text-green-600 font-semibold">✓</span>
+              <span className="text-gray-700 ml-2">Extensible architecture with 245 additional slots for future asset types</span>
             </div>
           </div>
         </div>
