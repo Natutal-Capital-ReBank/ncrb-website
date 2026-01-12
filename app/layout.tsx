@@ -10,6 +10,10 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
+// Only allow indexing in production (main branch)
+// VERCEL_ENV is set by Vercel: 'production' for main branch, 'preview' for PRs/branches, 'development' for local
+const isProduction = process.env.VERCEL_ENV === 'production';
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://naturalcapitalrebank.com'),
   title: {
@@ -66,11 +70,11 @@ export const metadata: Metadata = {
     creator: '@NCRBplatform',
   },
   robots: {
-    index: true,
-    follow: true,
+    index: isProduction,
+    follow: isProduction,
     googleBot: {
-      index: true,
-      follow: true,
+      index: isProduction,
+      follow: isProduction,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
