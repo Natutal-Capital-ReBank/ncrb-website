@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Leadership Team | Natural Capital ReBank",
     description: "Meet our founding team: experts in sustainable finance, blockchain architecture, and environmental science driving the natural capital tokenization revolution.",
-    url: "https://naturalcapitalrebank.com/team",
+    url: "https://ncrb.world/team",
     images: [
       {
         url: "/images/ncrb-icon.png",
@@ -73,7 +73,7 @@ export default function Team() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Natural Capital ReBank",
-    "url": "https://naturalcapitalrebank.com",
+    "url": "https://ncrb.world",
     "employee": team.map((member) => ({
       "@type": "Person",
       "name": member.name,

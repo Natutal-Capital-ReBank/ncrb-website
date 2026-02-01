@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy - Natural Capital ReBank",
     description:
       "Privacy Policy for Natural Capital ReBank. Learn how we collect, use, and protect your personal information in compliance with GDPR and data protection regulations.",
-    url: "https://naturalcapitalrebank.com/privacy",
+    url: "https://ncrb.world/privacy",
     siteName: "Natural Capital ReBank",
     type: "website",
   },
@@ -218,10 +218,10 @@ export default function Privacy() {
               If you have questions about this Privacy Policy or wish to
               exercise your data protection rights, please contact us at:{" "}
               <a
-                href="mailto:privacy@naturalcapitalrebank.com"
+                href="mailto:privacy@ncrb.world"
                 className="text-green-600 hover:text-green-700 underline"
               >
-                privacy@naturalcapitalrebank.com
+                privacy@ncrb.world
               </a>
             </p>
           </section>

@@ -13,6 +13,7 @@ export default function Navigation() {
     { href: "/", label: "Home" },
     { href: "/problem-market", label: "Problem & Market" },
     { href: "/solution", label: "Solution" },
+    { href: "/standards", label: "Standards" },
     { href: "/products", label: "Products" },
     { href: "/investors", label: "For Investors" },
     { href: "/team", label: "Team" },
