@@ -3,12 +3,14 @@
   "@type": "Organization",
   "name": "Natural Capital ReBank",
   "alternateName": "NCRB",
-  "url": "https://naturalcapitalrebank.com",
-  "logo": "https://naturalcapitalrebank.com/images/ncrb-logo.png",
+  "url": "https://ncrb.world",
+  "logo": "https://ncrb.world/images/ncrb-logo.png",
   "description": "Blockchain-powered infrastructure transforming natural capital credits and ecosystem services into transparent, liquid digital instruments for institutional investors.",
   "foundingDate": "2024",
   "sameAs": [
-    "https://www.linkedin.com/company/natural-capital-rebank/"
+    "https://www.linkedin.com/company/natural-capital-rebank/",
+    "https://x.com/NCRBplatform",
+    "https://www.facebook.com/NCRBplatform"
   ],
   "address": {
     "@type": "PostalAddress",
@@ -18,12 +20,12 @@
     {
       "@type": "ContactPoint",
       "contactType": "Investor Relations",
-      "url": "https://naturalcapitalrebank.com/investors"
+      "url": "https://ncrb.world/investors"
     },
     {
       "@type": "ContactPoint",
       "contactType": "General Inquiries",
-      "url": "https://naturalcapitalrebank.com/contact"
+      "url": "https://ncrb.world/contact"
     }
   ],
   "areaServed": [

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Natural Capital ReBank - Tokenizing Nature",
     description: "Blockchain-powered platform transforming carbon credits, biodiversity, and ecosystem services into institutional-grade digital assets.",
-    url: "https://naturalcapitalrebank.com",
+    url: "https://ncrb.world",
     images: [
       {
         url: "/images/ncrb-icon.png",
