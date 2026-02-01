@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://naturalcapitalrebank.com';
+  const baseUrl = 'https://ncrb.world';
   const currentDate = new Date();
 
   return [
@@ -19,6 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/solution`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/standards`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.8,

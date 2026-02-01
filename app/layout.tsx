@@ -15,7 +15,7 @@ const inter = Inter({
 const isProduction = process.env.VERCEL_ENV === 'production';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://naturalcapitalrebank.com'),
+  metadataBase: new URL('https://ncrb.world'),
   title: {
     default: 'Natural Capital ReBank - Tokenizing Nature into an Investable Asset Class',
     template: '%s | Natural Capital ReBank',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://naturalcapitalrebank.com',
+    url: 'https://ncrb.world',
     title: 'Natural Capital ReBank - Tokenizing Nature into an Investable Asset Class',
     description: 'Blockchain-powered infrastructure transforming natural capital into transparent, liquid digital instruments. $10T market opportunity in carbon, biodiversity, and ecosystem services.',
     siteName: 'Natural Capital ReBank',
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
     // bing: 'your-bing-verification-code',
   },
   alternates: {
-    canonical: 'https://naturalcapitalrebank.com',
+    canonical: 'https://ncrb.world',
   },
   category: 'finance',
 };
@@ -119,8 +119,8 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "Natural Capital ReBank",
               "alternateName": "NCRB",
-              "url": "https://naturalcapitalrebank.com",
-              "logo": "https://naturalcapitalrebank.com/images/ncrb-icon.png",
+              "url": "https://ncrb.world",
+              "logo": "https://ncrb.world/images/ncrb-icon.png",
               "description": "Blockchain-powered infrastructure transforming natural capital credits and ecosystem services into transparent, liquid digital instruments.",
               "sameAs": [
                 "https://x.com/NCRBplatform",

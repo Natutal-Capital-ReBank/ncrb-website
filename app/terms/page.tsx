@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "Terms of Service - Natural Capital ReBank",
     description:
       "Terms of Service for Natural Capital ReBank. Review our terms and conditions for using our services and platform.",
-    url: "https://naturalcapitalrebank.com/terms",
+    url: "https://ncrb.world/terms",
     siteName: "Natural Capital ReBank",
     type: "website",
   },
@@ -128,10 +128,10 @@ export default function Terms() {
             <p className="text-gray-700 leading-relaxed mb-4">
               For questions about these Terms of Service, please contact us at:{" "}
               <a
-                href="mailto:legal@naturalcapitalrebank.com"
+                href="mailto:legal@ncrb.world"
                 className="text-green-600 hover:text-green-700 underline"
               >
-                legal@naturalcapitalrebank.com
+                legal@ncrb.world
               </a>
             </p>
           </section>
