@@ -35,6 +35,7 @@ export default function Navigation() {
     {
       label: "Ventures",
       items: [
+        { href: "/ventures", label: "Overview" },
         { href: "/ventures/biochar", label: "Biochar" },
         { href: "/ventures/solar", label: "Solar" },
         { href: "/ventures/water", label: "Water Purification" },
