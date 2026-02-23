@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Card from "@/components/Card";
 import { Metadata } from "next";
+import HeroSection from "@/components/Hero";
 
 export const metadata: Metadata = {
   title: "Natural Capital ReBank - Tokenizing Nature into an Investable Asset Class",
@@ -24,96 +25,7 @@ export default function Home() {
   return (
     <main className="bg-gradient-to-br from-blue-50 via-green-50 to-teal-50">
       {/* Hero Section with Environmental Background */}
-      <section className="relative overflow-hidden">
-        {/* Background with gradient and subtle pattern */}
-        <div className="absolute inset-0 bg-gradient-to-br from-green-900 via-blue-900 to-teal-900"></div>
-        <div className="absolute inset-0 bg-[url('/images/pattern-60.svg')] opacity-20"></div>
-
-        <div className="relative container mx-auto px-4 py-24 md:py-32">
-          <div className="text-center mb-16">
-            {/* Hero Badge */}
-            <div className="inline-flex items-center px-4 py-2 glass rounded-full text-white mb-8 animate-fadeInUp">
-              <span className="mr-2">🌍</span>
-              <span className="text-sm font-medium">Institutional Natural Capital Infrastructure</span>
-            </div>
-
-            {/* Main Headline */}
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fadeInUp">
-              Natural Capital
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">
-                Tokenization Platform
-              </span>
-            </h1>
-
-            {/* Subheadline */}
-            <p className="text-xl md:text-2xl text-green-100 mb-12 max-w-4xl mx-auto leading-relaxed animate-fadeInUp">
-              Protecting $2.7T in at-risk economic value and unlocking the $10T natural capital opportunity
-              <br className="hidden md:block" />
-              through blockchain-powered verification and institutional-grade infrastructure.
-            </p>
-
-            {/* Environmental Impact Metrics */}
-            <div className="grid md:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto animate-scaleIn">
-              <div className="glass rounded-2xl p-6 text-center card-hover">
-                <div className="text-3xl mb-2">💎</div>
-                <div className="text-3xl font-bold text-white">$10T</div>
-                <div className="text-green-200 text-sm">Natural Capital Market</div>
-              </div>
-              <div className="glass rounded-2xl p-6 text-center card-hover">
-                <div className="text-3xl mb-2">🔒</div>
-                <div className="text-3xl font-bold text-white">8-12x</div>
-                <div className="text-blue-200 text-sm">Target Returns</div>
-              </div>
-              <div className="glass rounded-2xl p-6 text-center card-hover">
-                <div className="text-3xl mb-2">🌱</div>
-                <div className="text-3xl font-bold text-white">$1M</div>
-                <div className="text-teal-200 text-sm">Seed Round</div>
-              </div>
-            </div>
-
-            {/* Action Buttons */}
-            <div className="flex flex-col md:flex-row justify-center gap-4 mb-16 animate-fadeInUp">
-              <Link
-                href="/investors"
-                className="group bg-white text-green-900 px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all transform hover:scale-105 flex items-center justify-center"
-              >
-                <span className="mr-2">📊</span>
-                Download Investment Deck
-                <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-              </Link>
-              <Link
-                href="/contact?type=investor"
-                className="group glass border-2 border-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-green-900 transition-all transform hover:scale-105 flex items-center justify-center"
-              >
-                <span className="mr-2">📞</span>
-                Schedule Investor Call
-              </Link>
-            </div>
-
-            {/* Trust Indicators */}
-            <div className="flex flex-wrap justify-center gap-6 text-green-200 text-sm">
-              <div className="flex items-center">
-                <span className="mr-2">✓</span>
-                Blockchain-Powered Verification
-              </div>
-              <div className="flex items-center">
-                <span className="mr-2">✓</span>
-                Institutional-Grade Infrastructure
-              </div>
-              <div className="flex items-center">
-                <span className="mr-2">✓</span>
-                11 Asset Types with Extensible Architecture
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Floating Environmental Elements */}
-        <div className="absolute top-20 left-4 md:left-10 text-4xl md:text-6xl opacity-20 animate-bounce">🌿</div>
-        <div className="absolute top-40 right-4 md:right-20 text-3xl md:text-4xl opacity-30 animate-pulse">🦋</div>
-        <div className="absolute bottom-20 left-4 md:left-20 text-4xl md:text-5xl opacity-25 animate-bounce delay-1000">🌳</div>
-        <div className="absolute bottom-10 md:bottom-20 right-4 md:right-20 text-4xl md:text-5xl opacity-20 animate-pulse" style={{ animationDelay: '1.5s' }}>🌊</div>
-      </section>
+      <HeroSection/>
 
       {/* Problem Section - Modern Card Layout */}
       <section className="py-12 md:py-16 relative">

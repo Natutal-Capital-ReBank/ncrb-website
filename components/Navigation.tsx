@@ -102,11 +102,10 @@ export default function Navigation() {
             {/* Home Link */}
             <Link
               href="/"
-              className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                pathname === "/"
+              className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${pathname === "/"
                   ? "bg-green-50 text-green-700"
                   : "text-gray-700 hover:text-green-600 hover:bg-green-50"
-              }`}
+                }`}
             >
               Home
             </Link>
@@ -120,18 +119,16 @@ export default function Navigation() {
                 onMouseLeave={() => setOpenDropdown(null)}
               >
                 <button
-                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 ${
-                    isDropdownActive(dropdown)
+                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 ${isDropdownActive(dropdown)
                       ? "bg-green-50 text-green-700"
                       : "text-gray-700 hover:text-green-600 hover:bg-green-50"
-                  }`}
+                    }`}
                   onClick={() => setOpenDropdown(openDropdown === dropdown.label ? null : dropdown.label)}
                 >
                   {dropdown.label}
                   <svg
-                    className={`w-4 h-4 transition-transform ${
-                      openDropdown === dropdown.label ? "rotate-180" : ""
-                    }`}
+                    className={`w-4 h-4 transition-transform ${openDropdown === dropdown.label ? "rotate-180" : ""
+                      }`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -149,11 +146,10 @@ export default function Navigation() {
                         <Link
                           key={item.href}
                           href={item.href}
-                          className={`block px-4 py-2 text-sm transition-colors ${
-                            isActive
+                          className={`block px-4 py-2 text-sm transition-colors ${isActive
                               ? "bg-green-50 text-green-700"
                               : "text-gray-700 hover:bg-green-50 hover:text-green-600"
-                          }`}
+                            }`}
                           onClick={() => setOpenDropdown(null)}
                         >
                           {item.label}
@@ -169,7 +165,7 @@ export default function Navigation() {
               href="/investors"
               className="ml-4 px-6 py-2 bg-gradient-to-r from-green-600 to-blue-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all"
             >
-              Invest Now
+              WebApp
             </Link>
           </div>
 
@@ -204,11 +200,10 @@ export default function Navigation() {
               {/* Home Link */}
               <Link
                 href="/"
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  pathname === "/"
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${pathname === "/"
                     ? "bg-green-50 text-green-700"
                     : "text-gray-700 hover:text-green-600 hover:bg-green-50"
-                }`}
+                  }`}
                 onClick={() => setIsOpen(false)}
               >
                 Home
@@ -218,11 +213,10 @@ export default function Navigation() {
               {navDropdowns.map((dropdown) => (
                 <div key={dropdown.label} className="space-y-1">
                   <button
-                    className={`w-full px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-between ${
-                      isDropdownActive(dropdown)
+                    className={`w-full px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-between ${isDropdownActive(dropdown)
                         ? "bg-green-50 text-green-700"
                         : "text-gray-700 hover:text-green-600 hover:bg-green-50"
-                    }`}
+                      }`}
                     onClick={() =>
                       setMobileOpenDropdown(
                         mobileOpenDropdown === dropdown.label ? null : dropdown.label
@@ -231,9 +225,8 @@ export default function Navigation() {
                   >
                     {dropdown.label}
                     <svg
-                      className={`w-4 h-4 transition-transform ${
-                        mobileOpenDropdown === dropdown.label ? "rotate-180" : ""
-                      }`}
+                      className={`w-4 h-4 transition-transform ${mobileOpenDropdown === dropdown.label ? "rotate-180" : ""
+                        }`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -251,11 +244,10 @@ export default function Navigation() {
                           <Link
                             key={item.href}
                             href={item.href}
-                            className={`block px-3 py-2 rounded-lg text-sm transition-colors ${
-                              isActive
+                            className={`block px-3 py-2 rounded-lg text-sm transition-colors ${isActive
                                 ? "bg-green-50 text-green-700"
                                 : "text-gray-600 hover:bg-green-50 hover:text-green-600"
-                            }`}
+                              }`}
                             onClick={() => {
                               setIsOpen(false);
                               setMobileOpenDropdown(null);
@@ -275,7 +267,7 @@ export default function Navigation() {
                 className="mt-4 px-6 py-3 bg-gradient-to-r from-green-600 to-blue-600 text-white rounded-lg font-semibold text-center hover:shadow-lg transition-all"
                 onClick={() => setIsOpen(false)}
               >
-                Invest Now
+                WebApp
               </Link>
             </div>
           </div>

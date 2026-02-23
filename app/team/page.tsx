@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Leadership Team",
+  title: "Managing Partners",
   description: "Meet the NCRB founding team: Dr. Rubens Talukder (Finance), Zaki Alam (Technology), and Arno Neumann (Environmental Science). World-class expertise in ESG finance, blockchain technology, and natural capital accounting.",
   keywords: [
     "NCRB team",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "climate fintech founders",
   ],
   openGraph: {
-    title: "Leadership Team | Natural Capital ReBank",
+    title: "Managing Partners | Natural Capital ReBank",
     description: "Meet our founding team: experts in sustainable finance, blockchain architecture, and environmental science driving the natural capital tokenization revolution.",
     url: "https://ncrb.world/team",
     images: [
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
         url: "/images/ncrb-icon.png",
         width: 845,
         height: 340,
-        alt: "NCRB Leadership Team",
+        alt: "NCRB Managing Partners",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Leadership Team | Natural Capital ReBank",
+    title: "Managing Partners | Natural Capital ReBank",
     description: "World-class expertise in ESG finance, blockchain technology, and environmental sciences.",
     images: ["/images/ncrb-icon.png"],
   },
@@ -38,18 +38,8 @@ export const metadata: Metadata = {
 export default function Team() {
   const team = [
     {
-      name: "Dr. Rubens Talukder",
-      role: "Managing Partner",
-      specialty: "Finance",
-      image: "/images/Rubens.png",
-      imagePosition: "object-top",
-      bio: "Deep expertise in sustainable finance and institutional investment strategies, with a proven track record in ESG fund management and nature-based solutions across global markets.",
-      linkedin: "https://linkedin.com/in/rubens-t-2145982a",
-      twitter: "https://x.com/RubensTalukder",
-    },
-    {
       name: "Zaki Alam",
-      role: "Managing Partner",
+      role: "CEO",
       specialty: "Technology",
       image: "/images/Zaki.jpg",
       imagePosition: "object-top",
@@ -58,8 +48,18 @@ export default function Team() {
       twitter: "https://x.com/AlamZaki",
     },
     {
+      name: "Dr. Rubens Talukder",
+      role: "COO",
+      specialty: "Finance",
+      image: "/images/Rubens.png",
+      imagePosition: "object-top",
+      bio: "Deep expertise in sustainable finance and institutional investment strategies, with a proven track record in ESG fund management and nature-based solutions across global markets.",
+      linkedin: "https://linkedin.com/in/rubens-t-2145982a",
+      twitter: "https://x.com/RubensTalukder",
+    },
+    {
       name: "Arno Neumann",
-      role: "Managing Partner",
+      role: "CDO",
       specialty: "Environmental Science",
       image: "/images/Arno.png",
       imagePosition: "object-top",
@@ -99,7 +99,7 @@ export default function Team() {
         <div className="absolute inset-0 bg-gradient-to-br from-green-900 via-blue-900 to-teal-900"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Leadership Team
+            Managing Partners
           </h1>
           <p className="text-xl md:text-2xl text-green-100 max-w-4xl mx-auto">
             World-class expertise in ESG finance, blockchain technology, and environmental sciences.
