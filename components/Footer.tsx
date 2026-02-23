@@ -60,7 +60,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.facebook.com/NCRBplatform"
+                href="https://facebook.com/NCRBplatform"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-blue-500 flex items-center justify-center transition-colors group"
