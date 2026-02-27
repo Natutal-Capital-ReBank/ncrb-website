@@ -36,6 +36,11 @@ jobs:
           git config user.email "zaki.alam@gmail.com"
           git config user.name "Zaki Alam"
 
+      - name: Rewrite commit author
+        run: |
+          git commit --amend --no-edit --author="Zaki Alam <zaki.alam@gmail.com>" --allow-empty
+          git push --force
+
       # Install Vercel CLI
       - name: Install Vercel CLI
         run: npm install -g vercel@latest
@@ -53,7 +58,8 @@ jobs:
         run: |
           url=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} --scope=smartcorp)
           echo "url=$url" >> $GITHUB_OUTPUT
-          echo "Deployed to: $url"
 
-      - name: Display Deployment URL
-        run: echo "✅ Deployed to ${{ steps.deploy.outputs.url }}"
+      - name: Set Alias for Development
+        run: |
+          url_without_https=$(echo "${{ steps.deploy.outputs.url }}" | sed 's|https://||')
+          vercel alias set $url_without_https www.test.ncrb.world --token=${{ secrets.VERCEL_TOKEN }} --scope=smartcorp
