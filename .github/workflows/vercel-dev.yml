@@ -2,7 +2,8 @@ name: Deploy to Vercel Development
 
 on:
   push:
-    branches: [ dev, develop ]
+    branches:
+      - dev
   workflow_dispatch:
 
 env:
@@ -13,7 +14,6 @@ env:
 
 permissions:
   contents: write
-  deployments: write
 
 jobs:
   deploy:
@@ -22,6 +22,9 @@ jobs:
       # Checkout ncrb-website
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: dev
 
       # Setup Node.js
       - name: Setup Node.js
@@ -37,9 +40,10 @@ jobs:
           git config user.name "Zaki Alam"
 
       - name: Rewrite commit author
+        if: github.ref == 'refs/heads/dev'
         run: |
-          git commit --amend --no-edit --author="Zaki Alam <zaki.alam@gmail.com>" --allow-empty
-          git push --force
+          git commit --amend --no-edit --author="Zaki Alam <zaki.alam@gmail.com>" --allow-empty || true
+          git push --force || true
 
       # Install Vercel CLI
       - name: Install Vercel CLI
