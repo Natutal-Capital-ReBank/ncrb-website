@@ -95,10 +95,10 @@ export default function HeroSection() {
         ];
 
         const dataLabels: DataLabel[] = [
-            { text: "+$847M verified", x: 0.06, y: 0.12, color: "#4ade80" },
+            { text: "+$847M TVL", x: 0.06, y: 0.12, color: "#4ade80" },
             { text: "342 assets live", x: 0.58, y: 0.06, color: "#38bdf8" },
             { text: "99.2% uptime", x: 0.04, y: 0.86, color: "#34d399" },
-            { text: "18 countries", x: 0.58, y: 0.88, color: "#a3e635" },
+            { text: "3 blockchains", x: 0.58, y: 0.88, color: "#a3e635" },
         ];
 
         let frame = 0;
@@ -241,7 +241,7 @@ export default function HeroSection() {
     return (
         <section className="relative overflow-hidden min-h-screen flex items-center">
             {/* Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-green-950 via-slate-900 to-teal-950" />
+            <div className="absolute inset-0 bg-gradient-to-br from-green-900 via-blue-900 to-teal-900" />
             <div
                 className="absolute inset-0 opacity-[0.06]"
                 style={{
