@@ -20,7 +20,7 @@ export default function Investors() {
               Capture the $10T natural capital opportunity through institutional-grade blockchain infrastructure and diversified revenue streams.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button href="#" variant="primary" size="lg">
+              <Button href="/contact?type=investor#contact-form" variant="primary" size="lg">
                 Download Full Deck
               </Button>
               <Button href="/contact?type=investor" variant="outline" size="lg">
