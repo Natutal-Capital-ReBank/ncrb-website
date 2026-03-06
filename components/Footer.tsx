@@ -1,8 +1,11 @@
+'use client';
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [imageError, setImageError] = useState(false);
 
   return (
     <footer className="bg-gray-900 text-white">
@@ -12,14 +15,21 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <div className="relative w-10 h-10">
-                <Image
-                  src="/images/ncrb-icon.png"
-                  alt="NCRB Logo"
-                  fill
-                  className="object-contain"
-                />
+                {!imageError ? (
+                  <Image
+                    src="/images/ncrb-icon.png"
+                    alt="NCRB Logo"
+                    fill
+                    className="object-contain"
+                    onError={() => setImageError(true)}
+                  />
+                ) : (
+                  <div className="w-10 h-10 bg-gray-700 rounded flex items-center justify-center text-xs font-bold">
+                    NC
+                  </div>
+                )}
               </div>
-              <span className="font-bold text-lg">Natural Capital ReBank</span>
+              <span className="font-bold text-base sm:text-lg">Natural Capital ReBank</span>
             </div>
             <p className="text-gray-400 text-sm mb-4">
               Tokenizing nature into an investable asset class through blockchain-powered verification and institutional-grade infrastructure.
@@ -31,7 +41,7 @@ export default function Footer() {
                 href="https://x.com/NCRBplatform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-black flex items-center justify-center transition-colors group"
+                className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-black flex items-center justify-center transition-colors group focus:outline-none focus:ring-2 focus:ring-white"
                 aria-label="X (Twitter)"
               >
                 <svg
@@ -47,7 +57,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/natural-capital-rebank/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-blue-600 flex items-center justify-center transition-colors group"
+                className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-blue-700 flex items-center justify-center transition-colors group focus:outline-none focus:ring-2 focus:ring-white"
                 aria-label="LinkedIn"
               >
                 <svg
@@ -63,7 +73,7 @@ export default function Footer() {
                 href="https://facebook.com/NCRBplatform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-blue-500 flex items-center justify-center transition-colors group"
+                className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-blue-600 flex items-center justify-center transition-colors group focus:outline-none focus:ring-2 focus:ring-white"
                 aria-label="Facebook"
               >
                 <svg
@@ -79,7 +89,7 @@ export default function Footer() {
                 href="https://youtube.com/@NCRBplatform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-red-600 flex items-center justify-center transition-colors group"
+                className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-red-600 flex items-center justify-center transition-colors group focus:outline-none focus:ring-2 focus:ring-white"
                 aria-label="YouTube"
               >
                 <svg
@@ -99,27 +109,27 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/problem-market" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/problem-market" className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:underline">
                   Problem & Market
                 </Link>
               </li>
               <li>
-                <Link href="/solution" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/solution" className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:underline">
                   Our Solution
                 </Link>
               </li>
               <li>
-                <Link href="/standards" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/standards" className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:underline">
                   Standards & Compliance
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/products" className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:underline">
                   Products & Roadmap
                 </Link>
               </li>
               <li>
-                <Link href="/team" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/team" className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:underline">
                   Team & Governance
                 </Link>
               </li>
@@ -131,22 +141,40 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">For Stakeholders</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/investors" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/investors" className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:underline">
                   For Investors
                 </Link>
               </li>
               <li>
-                <Link href="/contact?type=corporate" className="text-gray-400 hover:text-white transition-colors">
+                <Link 
+                  href={{
+                    pathname: '/contact',
+                    query: { type: 'corporate' }
+                  }} 
+                  className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:underline"
+                >
                   For Corporates
                 </Link>
               </li>
               <li>
-                <Link href="/contact?type=developer" className="text-gray-400 hover:text-white transition-colors">
+                <Link 
+                  href={{
+                    pathname: '/contact',
+                    query: { type: 'developer' }
+                  }} 
+                  className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:underline"
+                >
                   For Project Developers
                 </Link>
               </li>
               <li>
-                <Link href="/contact?type=partner" className="text-gray-400 hover:text-white transition-colors">
+                <Link 
+                  href={{
+                    pathname: '/contact',
+                    query: { type: 'partner' }
+                  }} 
+                  className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:underline"
+                >
                   Partnerships
                 </Link>
               </li>
@@ -158,17 +186,17 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/resources" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/resources" className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:underline">
                   Insights & Articles
                 </Link>
               </li>
               <li>
-                <Link href="/technology" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/technology" className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:underline">
                   Technology
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:underline">
                   Contact Us
                 </Link>
               </li>
@@ -187,10 +215,10 @@ export default function Footer() {
               © {currentYear} Natural Capital ReBank. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors focus:outline-none focus:underline">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors focus:outline-none focus:underline">
                 Terms of Service
               </Link>
             </div>
