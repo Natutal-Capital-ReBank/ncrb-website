@@ -81,7 +81,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto" id="contact-form">
             <Card className="bg-white">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
