@@ -137,9 +137,14 @@ export default function Navigation() {
                   </svg>
                 </button>
 
+                {/* Invisible hover bridge - prevents dropdown from closing on slow cursor movement */}
+                {openDropdown === dropdown.label && (
+                  <div className="absolute top-full left-0 w-full h-2 -mt-1" />
+                )}
+
                 {/* Dropdown Menu */}
                 {openDropdown === dropdown.label && (
-                  <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                  <div className="absolute top-full left-0 mt-0 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
                     {dropdown.items.map((item) => {
                       const isActive = pathname === item.href;
                       return (

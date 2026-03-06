@@ -183,7 +183,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center mt-12 space-y-4">
+          <div className="text-center mt-12 flex flex-col md:flex-row items-center justify-center gap-6">
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-xl shadow-lg">
               <span className="text-2xl font-bold">$16.5T+</span>
               <span className="text-sm">Total Market Size</span>
