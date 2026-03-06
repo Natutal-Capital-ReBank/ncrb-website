@@ -269,12 +269,12 @@ export default function Investors() {
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Target Returns</h3>
             <div className="flex flex-col md:flex-row justify-center items-center gap-8">
               <div>
-                <div className="text-5xl font-bold gradient-feature bg-clip-text text-transparent mb-2">8-12x</div>
+                <div className="text-3xl p-3 font-bold text-gray-900 gradient-feature bg-clip-text mb-2 rounded-full">8-12x</div>
                 <p className="text-gray-600">Multiple on invested capital</p>
               </div>
-              <div className="text-4xl text-gray-300 hidden md:block">•</div>
+              <div className="text-4xl  text-gray-300 hidden md:block">•</div>
               <div>
-                <div className="text-5xl font-bold gradient-feature bg-clip-text text-transparent mb-2">3-5 years</div>
+                <div className="text-3xl p-3 font-bold text-gray-900 gradient-feature bg-clip-text mb-2 rounded-full">3-5 years</div>
                 <p className="text-gray-600">Investment horizon</p>
               </div>
             </div>
