@@ -183,22 +183,54 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center mt-12 flex flex-col md:flex-row items-center justify-center gap-6">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-xl shadow-lg">
-              <span className="text-2xl font-bold">$16.5T+</span>
-              <span className="text-sm">Total Market Size</span>
-              <span className="mx-3 text-white/50">|</span>
-              <span className="text-2xl font-bold">$1.5T+</span>
-              <span className="text-sm">NCRB Addressable</span>
-              <span className="mx-3 text-white/50">|</span>
-              <span className="text-2xl font-bold">$15B</span>
-              <span className="text-sm">Year 5 Target (1%)</span>
-            </div>
-            <div className="inline-block bg-white px-6 py-3 rounded-xl shadow-md border border-gray-200">
-              <span className="text-green-600 font-semibold">✓</span>
-              <span className="text-gray-700 ml-2">Extensible architecture with 245 additional slots for future asset types</span>
-            </div>
+          <div className="mt-12 px-4">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 h-80">
+    {/* Left: Stats with clean layout */}
+    <div className="flex flex-col justify-between border-l-4 border-green-600 pl-8 py-6">
+      <div>
+        <p className="text-xs text-gray-500 uppercase tracking-widest font-semibold mb-8">Market Metrics</p>
+      </div>
+      
+      <div className="space-y-8">
+        <div>
+          <div className="text-5xl font-black bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">$16.5T+</div>
+          <p className="text-sm text-gray-600 mt-2">Total Market Size</p>
+        </div>
+        
+        <div>
+          <div className="text-5xl font-black bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">$1.5T+</div>
+          <p className="text-sm text-gray-600 mt-2">NCRB Addressable</p>
+        </div>
+        
+        <div>
+          <div className="text-5xl font-black bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">$15B</div>
+          <p className="text-sm text-gray-600 mt-2">Year 5 Target (1%)</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Right: Feature highlight */}
+    <div className="flex flex-col justify-between border-l-4 border-green-600 pl-8 py-6">
+      <div>
+        <p className="text-xs text-gray-500 uppercase tracking-widest font-semibold mb-8">Architecture</p>
+      </div>
+      
+      <div className="space-y-6">
+        <div className="flex items-start gap-4">
+          <div className="text-4xl font-black text-green-600 flex-shrink-0">245</div>
+          <div>
+            <p className="text-gray-900 font-semibold leading-tight">Additional Asset Type Slots</p>
+            <p className="text-sm text-gray-600 mt-2">Extensible architecture for future growth without core changes</p>
           </div>
+        </div>
+        
+        <div className="mt-8 pt-6 border-t border-gray-200">
+          <p className="text-xs text-green-600 font-bold uppercase tracking-widest">✓ Future-proof Design</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       </section>
 
