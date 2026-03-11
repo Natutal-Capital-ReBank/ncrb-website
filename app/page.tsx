@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main className="bg-gradient-to-br from-blue-50 via-green-50 to-teal-50">
       {/* Hero Section with Environmental Background */}
-      <HeroSection/>
+      <HeroSection />
 
       {/* Problem Section - Modern Card Layout */}
       <section className="py-12 md:py-16 relative">
@@ -183,61 +183,51 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="mt-12 px-4">
-  <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 h-80">
-    {/* Left: Stats with clean layout */}
-    <div className="flex flex-col justify-between border-l-4 border-green-600 pl-8 py-6">
-      <div>
-        <p className="text-xs text-gray-500 uppercase tracking-widest font-semibold mb-8">Market Metrics</p>
-      </div>
-      
-      <div className="space-y-8">
-        <div>
-          <div className="text-5xl font-black bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">$16.5T+</div>
-          <p className="text-sm text-gray-600 mt-2">Total Market Size</p>
-        </div>
-        
-        <div>
-          <div className="text-5xl font-black bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">$1.5T+</div>
-          <p className="text-sm text-gray-600 mt-2">NCRB Addressable</p>
-        </div>
-        
-        <div>
-          <div className="text-5xl font-black bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">$15B</div>
-          <p className="text-sm text-gray-600 mt-2">Year 5 Target (1%)</p>
-        </div>
-      </div>
-    </div>
+          <div className="w-full px-4 py-12 md:py-16">
+            <div className="flex flex-col lg:flex-row gap-6 max-w-6xl mx-auto">
+              {/* Market Stats Card */}
+              <div className="flex-1 bg-gradient-to-br from-green-600 via-emerald-500 to-blue-600 text-white p-8 rounded-2xl shadow-2xl overflow-hidden relative">
+                <div className="absolute inset-0 bg-grid-white/10 [mask-image:linear-gradient(0deg,transparent,black)]" />
+                <div className="relative z-10">
+                  <div className="grid grid-cols-3 gap-6">
+                    <div className="text-center">
+                      <div className="text-3xl font-bold tracking-tight">$16.5T+</div>
+                      <div className="text-xs font-medium text-white/80 mt-2 uppercase tracking-wider">Total Market</div>
+                    </div>
+                    <div className="border-l border-r border-white/20 px-6">
+                      <div className="text-3xl font-bold tracking-tight">$1.5T+</div>
+                      <div className="text-xs font-medium text-white/80 mt-2 uppercase tracking-wider">NCRB Addressable</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-3xl font-bold tracking-tight">$15B</div>
+                      <div className="text-xs font-medium text-white/80 mt-2 uppercase tracking-wider">Year 5 Target</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-    {/* Right: Feature highlight */}
-    <div className="flex flex-col justify-between border-l-4 border-green-600 pl-8 py-6">
-      <div>
-        <p className="text-xs text-gray-500 uppercase tracking-widest font-semibold mb-8">Architecture</p>
-      </div>
-      
-      <div className="space-y-6">
-        <div className="flex items-start gap-4">
-          <div className="text-4xl font-black text-green-600 flex-shrink-0">245</div>
-          <div>
-            <p className="text-gray-900 font-semibold leading-tight">Additional Asset Type Slots</p>
-            <p className="text-sm text-gray-600 mt-2">Extensible architecture for future growth without core changes</p>
+              {/* Extensibility Card */}
+              <div className="flex-1 bg-white border-2 border-green-200 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                    <span className="text-green-600 font-bold text-lg">✓</span>
+                  </div>
+                  <div>
+                    <p className="text-gray-800 font-medium leading-relaxed">
+                      Extensible architecture with <span className="text-green-600 font-semibold">245 additional slots</span> for future asset types
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        
-        <div className="mt-8 pt-6 border-t border-gray-200">
-          <p className="text-xs text-green-600 font-bold uppercase tracking-widest">✓ Future-proof Design</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
         </div>
       </section>
 
       {/* Why Now Section */}
-      <section className="py-12 md:py-16">
+      <section className="py-10 md:py-12">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Why Now
             </h2>

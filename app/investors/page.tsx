@@ -265,17 +265,47 @@ export default function Investors() {
             </Card>
           </div>
 
-          <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Target Returns</h3>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-              <div>
-                <div className="text-3xl p-3 font-bold text-gray-900 gradient-feature bg-clip-text mb-2 rounded-full">8-12x</div>
-                <p className="text-gray-600">Multiple on invested capital</p>
+          <div className="relative overflow-hidden rounded-2xl p-8 md:p-10">
+            {/* Gradient Background */}
+            <div className="absolute inset-0 bg-gradient-to-r from-green-50 via-white to-blue-50" />
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-600 via-blue-600 to-transparent" />
+
+            <div className="relative z-10">
+              {/* Header */}
+              <div className="text-center mb-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  Target Returns
+                </h3>
+                <p className="text-gray-500 text-xs uppercase tracking-widest mt-1">Investment Performance</p>
               </div>
-              <div className="text-4xl  text-gray-300 hidden md:block">•</div>
-              <div>
-                <div className="text-3xl p-3 font-bold text-gray-900 gradient-feature bg-clip-text mb-2 rounded-full">3-5 years</div>
-                <p className="text-gray-600">Investment horizon</p>
+
+              {/* Metrics Container */}
+              <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+                {/* Returns Metric */}
+                <div className="text-center">
+                  <div className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 leading-none mb-2">
+                    8–12x
+                  </div>
+                  <div className="h-0.5 w-10 mx-auto mb-3 bg-gradient-to-r from-green-600 to-emerald-600 rounded-full" />
+                  <h4 className="text-gray-900 font-semibold text-sm">Multiple on Capital</h4>
+                </div>
+
+                {/* Divider */}
+                <div className="hidden md:flex items-center h-20">
+                  <div className="relative w-px h-full">
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-300 to-transparent" />
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full border-2 border-gray-400 bg-white" />
+                  </div>
+                </div>
+
+                {/* Horizon Metric */}
+                <div className="text-center">
+                  <div className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600 leading-none mb-2">
+                    3–5 yrs
+                  </div>
+                  <div className="h-0.5 w-10 mx-auto mb-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full" />
+                  <h4 className="text-gray-900 font-semibold text-sm">Investment Horizon</h4>
+                </div>
               </div>
             </div>
           </div>
