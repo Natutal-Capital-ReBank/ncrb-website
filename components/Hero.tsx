@@ -294,6 +294,10 @@ export default function HeroSection() {
                             through blockchain-powered verification and institutional-grade infrastructure.
                         </p>
 
+                        <p className="text-lg text-slate-300 leading-relaxed max-w-lg">
+                            Organizations seeking traditional purchase options for environmental credits can also contact us directly. We work with a network of trusted partners who can facilitate verified credit procurement and structured transactions aligned with institutional standards.
+                        </p>
+
                         {/* Metric Cards */}
                         <div className="grid grid-cols-3 gap-3 w-full max-w-md">
                             {[
