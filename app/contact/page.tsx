@@ -81,7 +81,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto" id="contact-form">
             <Card className="bg-white">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -190,40 +190,37 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card hover className="text-center">
               <div className="text-3xl mb-3">🇺🇸</div>
-              <h3 className="font-semibold text-gray-900 mb-2">United States (HQ)</h3>
-              <p className="text-sm text-gray-600">
-                New York, NY<br />
-                San Francisco, CA
+              <h3 className="font-semibold text-gray-900 mb-3">World Headquarters</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                12 Manomet Point Road, Suite 293<br />
+                Manomet, MA 02345-0293, USA<br />
+                <span className="mt-2 inline-block">T: <a href="tel:+17812662004" className="text-green-600 hover:underline">+1-781-266-2004</a></span><br />
+                <a href="mailto:NaturalCapitalRebank@gmail.com" className="text-green-600 hover:underline break-all">NaturalCapitalRebank@gmail.com</a>
               </p>
             </Card>
 
             <Card hover className="text-center">
               <div className="text-3xl mb-3">🌎</div>
-              <h3 className="font-semibold text-gray-900 mb-2">Americas</h3>
-              <p className="text-sm text-gray-600">
-                São Paulo, Brazil<br />
-                Toronto, Canada
-              </p>
-            </Card>
-
-            <Card hover className="text-center">
-              <div className="text-3xl mb-3">🇪🇺</div>
-              <h3 className="font-semibold text-gray-900 mb-2">Europe</h3>
-              <p className="text-sm text-gray-600">
-                London, UK<br />
-                Frankfurt, Germany
+              <h3 className="font-semibold text-gray-900 mb-3">Americas &amp; Europe</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                32357 Marshall Road<br />
+                Abbotsford, British Columbia<br />
+                V2T 1A6, Canada<br />
+                <span className="mt-2 inline-block">T: <a href="tel:+16048094334" className="text-green-600 hover:underline">+1-604-809-4334</a></span>
               </p>
             </Card>
 
             <Card hover className="text-center">
               <div className="text-3xl mb-3">🌏</div>
-              <h3 className="font-semibold text-gray-900 mb-2">Asia-Pacific</h3>
-              <p className="text-sm text-gray-600">
-                Singapore<br />
-                Sydney, Australia
+              <h3 className="font-semibold text-gray-900 mb-3">Asia-Pacific</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                House 26, Road 7, Block G<br />
+                Banani, Dhaka 1213<br />
+                Bangladesh<br />
+                <span className="mt-2 inline-block">T: <a href="tel:+8801703727060" className="text-green-600 hover:underline">+880-1703-727060</a></span>
               </p>
             </Card>
           </div>

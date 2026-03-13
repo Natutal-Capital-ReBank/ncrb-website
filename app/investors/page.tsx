@@ -20,7 +20,7 @@ export default function Investors() {
               Capture the $10T natural capital opportunity through institutional-grade blockchain infrastructure and diversified revenue streams.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button href="#" variant="primary" size="lg">
+              <Button href="/contact?type=investor#contact-form" variant="primary" size="lg">
                 Download Full Deck
               </Button>
               <Button href="/contact?type=investor" variant="outline" size="lg">
@@ -150,45 +150,55 @@ export default function Investors() {
             </div>
 
             <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">12-Month Milestones</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">24-Month Product Roadmap</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
-                    <span className="text-green-600 font-bold">Q1</span>
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                    <span className="text-green-600 font-bold text-xs text-center leading-tight">Q2<br/>26</span>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Platform MVP Launch</h4>
-                    <p className="text-sm text-gray-600">Core tokenization engine, registry integrations, dashboard</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
-                    <span className="text-blue-600 font-bold">Q2</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Pilot Partnerships</h4>
-                    <p className="text-sm text-gray-600">2-3 Fortune 500 BaaS clients, first credit tokenization</p>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-gray-900">Prototype → Testnet Launch</h4>
+                    <p className="text-sm text-gray-600">Smart contract audits, testnet deployment, API documentation</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center">
-                    <span className="text-teal-600 font-bold">Q3</span>
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                    <span className="text-blue-600 font-bold text-xs text-center leading-tight">Q3<br/>26</span>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Regulatory Compliance</h4>
-                    <p className="text-sm text-gray-600">US, EU licensing secured; TNFD alignment certified</p>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-gray-900">MVP Launch + Partner Onboarding</h4>
+                    <p className="text-sm text-gray-600">Mainnet deployment, 2-3 Fortune 500 pilots, BaaS infrastructure live</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center">
-                    <span className="text-orange-600 font-bold">Q4</span>
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center">
+                    <span className="text-teal-600 font-bold text-xs text-center leading-tight">Q4<br/>26</span>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Series A Readiness</h4>
-                    <p className="text-sm text-gray-600">$10M+ AUM, proven unit economics, Series A pitch</p>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-gray-900">Regulatory Compliance & Buyer Engagement</h4>
+                    <p className="text-sm text-gray-600">US, EU licensing secured; TNFD certification; first credit tokenization</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+                    <span className="text-orange-600 font-bold text-xs text-center leading-tight">Q2<br/>27</span>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-gray-900">Phase 2 Launch + Enhancements</h4>
+                    <p className="text-sm text-gray-600">Advanced trading & derivatives, vesting enhancements, $100M+ AUM trajectory</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
+                    <span className="text-purple-600 font-bold text-xs text-center leading-tight">Q2<br/>28</span>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-gray-900">Phase 3 Launch + Stablecoin</h4>
+                    <p className="text-sm text-gray-600">Native stablecoin, institutional market making, Series A+ readiness</p>
                   </div>
                 </div>
               </div>
@@ -265,17 +275,47 @@ export default function Investors() {
             </Card>
           </div>
 
-          <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Target Returns</h3>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-              <div>
-                <div className="text-5xl font-bold gradient-feature bg-clip-text text-transparent mb-2">8-12x</div>
-                <p className="text-gray-600">Multiple on invested capital</p>
+          <div className="relative overflow-hidden rounded-2xl p-8 md:p-10">
+            {/* Gradient Background */}
+            <div className="absolute inset-0 bg-gradient-to-r from-green-50 via-white to-blue-50" />
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-600 via-blue-600 to-transparent" />
+
+            <div className="relative z-10">
+              {/* Header */}
+              <div className="text-center mb-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  Target Returns
+                </h3>
+                <p className="text-gray-500 text-xs uppercase tracking-widest mt-1">Investment Performance</p>
               </div>
-              <div className="text-4xl text-gray-300 hidden md:block">•</div>
-              <div>
-                <div className="text-5xl font-bold gradient-feature bg-clip-text text-transparent mb-2">3-5 years</div>
-                <p className="text-gray-600">Investment horizon</p>
+
+              {/* Metrics Container */}
+              <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+                {/* Returns Metric */}
+                <div className="text-center">
+                  <div className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 leading-none mb-2">
+                    8–12x
+                  </div>
+                  <div className="h-0.5 w-10 mx-auto mb-3 bg-gradient-to-r from-green-600 to-emerald-600 rounded-full" />
+                  <h4 className="text-gray-900 font-semibold text-sm">Multiple on Capital</h4>
+                </div>
+
+                {/* Divider */}
+                <div className="hidden md:flex items-center h-20 -mt-7">
+                  <div className="relative w-px h-full">
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-300 to-transparent" />
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full border-2 border-gray-400 bg-white" />
+                  </div>
+                </div>
+
+                {/* Horizon Metric */}
+                <div className="text-center">
+                  <div className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600 leading-none mb-2">
+                    3–5 yrs
+                  </div>
+                  <div className="h-0.5 w-10 mx-auto mb-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full" />
+                  <h4 className="text-gray-900 font-semibold text-sm">Investment Horizon</h4>
+                </div>
               </div>
             </div>
           </div>
