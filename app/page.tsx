@@ -275,11 +275,8 @@ export default function Home() {
               Investment Opportunity
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <div className="glass rounded-3xl p-8 card-hover">
-                <div className="text-4xl font-bold text-white mb-2">$1M</div>
-                <div className="text-green-200">Seed Round</div>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              
               <div className="glass rounded-3xl p-8 card-hover">
                 <div className="text-4xl font-bold text-white mb-2">8–12x</div>
                 <div className="text-blue-200">Target Multiple</div>
