@@ -42,7 +42,7 @@ export default function Navigation() {
       ],
     },
     {
-      label: "Investors",
+      label: "Partnership",
       items: [
         // { href: "#'", label: "For Investors" },
         { href: "/partnership", label: "Partnership" },
