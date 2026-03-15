@@ -276,7 +276,7 @@ export default function Home() {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              
+
               <div className="glass rounded-3xl p-8 card-hover">
                 <div className="text-4xl font-bold text-white mb-2">8–12x</div>
                 <div className="text-blue-200">Target Multiple</div>
@@ -292,7 +292,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 justify-center">
-              <Link href="/investors" className="bg-white text-green-900 px-10 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all transform hover:scale-105">
+              <Link href="#'" className="bg-white text-green-900 px-10 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all transform hover:scale-105">
                 View Investment Details
               </Link>
               <Link href="/contact?type=investor" className="glass border-2 border-white/30 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-green-900 transition-all transform hover:scale-105">

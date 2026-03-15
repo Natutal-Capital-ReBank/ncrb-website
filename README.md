@@ -39,7 +39,7 @@ The website uses a premium climate-fintech aesthetic inspired by the Natural Cap
 2. **Problem & Market** (`/problem-market`) - Natural capital crisis, carbon market challenges, TAM
 3. **Solution** (`/solution`) - Platform overview, capabilities, use cases (Coming Soon)
 4. **Products** (`/products`) - Phase 1-3 roadmap, product suite (Coming Soon)
-5. **For Investors** (`/investors`) - Investment thesis, economics, risks, exits
+5. **For Investors** (`#'`) - Investment thesis, economics, risks, exits
 6. **Team** (`/team`) - Founding team, advisory board, governance (Coming Soon)
 7. **Technology** (`/technology`) - Tokenization architecture (Coming Soon)
 8. **Resources** (`/resources`) - Thought leadership, articles (Coming Soon)

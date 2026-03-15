@@ -320,12 +320,12 @@ export default function HeroSection() {
                         {/* CTAs */}
                         <div className="flex flex-col sm:flex-row gap-3 pt-1">
                             <Link
-                                href="/investors"
+                                href="#'"
                                 className="group inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold text-green-950 text-sm transition-all hover:scale-105 hover:shadow-xl hover:shadow-emerald-500/25"
                                 style={{ background: "linear-gradient(135deg, #4ade80, #34d399)" }}
                             >
                                 <span>📊</span>
-                                Download Investment Deck
+                                Request Investment Deck
                                 <span className="group-hover:translate-x-0.5 transition-transform">→</span>
                             </Link>
                             <Link
