@@ -189,17 +189,17 @@ export default function Home() {
               <div className="flex-1 bg-gradient-to-br from-green-600 via-emerald-500 to-blue-600 text-white p-8 rounded-2xl shadow-2xl overflow-hidden relative">
                 <div className="absolute inset-0 bg-grid-white/10 [mask-image:linear-gradient(0deg,transparent,black)]" />
                 <div className="relative z-10">
-                  <div className="grid grid-cols-3 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
                     <div className="text-center">
-                      <div className="text-3xl font-bold tracking-tight">$16.5T+</div>
+                      <div className="text-xl md:text-3xl font-bold tracking-tight">$16.5T+</div>
                       <div className="text-xs font-medium text-white/80 mt-2 uppercase tracking-wider">Total Market</div>
                     </div>
-                    <div className="border-l border-r border-white/20 px-6">
-                      <div className="text-3xl font-bold tracking-tight">$1.5T+</div>
+                    <div className="border-l text-center border-r border-white/20 px-3 md:px-6">
+                      <div className="text-xl md:text-3xl font-bold tracking-tight">$1.5T+</div>
                       <div className="text-xs font-medium text-white/80 mt-2 uppercase tracking-wider">NCRB Addressable</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-3xl font-bold tracking-tight">$15B</div>
+                      <div className="text-xl md:text-3xl font-bold tracking-tight">$15B</div>
                       <div className="text-xs font-medium text-white/80 mt-2 uppercase tracking-wider">Year 5 Target</div>
                     </div>
                   </div>
