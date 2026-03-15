@@ -149,7 +149,7 @@ export default function ComingSoon() {
                             </div>
 
                             <p className="text-xs text-gray-500 text-center">
-                                We'll notify you as soon as the platform is ready. No spam, we promise.
+                                We&apos;ll notify you as soon as the platform is ready. No spam, we promise.
                             </p>
                         </form>
                     </Card>
