@@ -257,7 +257,7 @@ export default function PartnershipPage() {
               Contact Partnership Team
             </Link>
             <Link
-              href="/investors"
+              href="#'"
               className="px-8 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all"
             >
               Investor Information

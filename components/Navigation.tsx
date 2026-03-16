@@ -41,13 +41,13 @@ export default function Navigation() {
         { href: "/ventures/water", label: "Water Purification" },
       ],
     },
-    {
-      label: "Investors",
-      items: [
-        { href: "/investors", label: "For Investors" },
-        { href: "/partnership", label: "Partnership" },
-      ],
-    },
+   // {
+    //  label: "Partnership",
+    //  items: [
+        // { href: "#'", label: "For Investors" },
+     //   { href: "/partnership", label: "Partnership" },
+     // ],
+   // },
     {
       label: "Company",
       items: [
@@ -103,8 +103,8 @@ export default function Navigation() {
             <Link
               href="/"
               className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${pathname === "/"
-                  ? "bg-green-50 text-green-700"
-                  : "text-gray-700 hover:text-green-600 hover:bg-green-50"
+                ? "bg-green-50 text-green-700"
+                : "text-gray-700 hover:text-green-600 hover:bg-green-50"
                 }`}
             >
               Home
@@ -120,8 +120,8 @@ export default function Navigation() {
               >
                 <button
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 ${isDropdownActive(dropdown)
-                      ? "bg-green-50 text-green-700"
-                      : "text-gray-700 hover:text-green-600 hover:bg-green-50"
+                    ? "bg-green-50 text-green-700"
+                    : "text-gray-700 hover:text-green-600 hover:bg-green-50"
                     }`}
                   onClick={() => setOpenDropdown(openDropdown === dropdown.label ? null : dropdown.label)}
                 >
@@ -152,8 +152,8 @@ export default function Navigation() {
                           key={item.href}
                           href={item.href}
                           className={`block px-4 py-2 text-sm transition-colors ${isActive
-                              ? "bg-green-50 text-green-700"
-                              : "text-gray-700 hover:bg-green-50 hover:text-green-600"
+                            ? "bg-green-50 text-green-700"
+                            : "text-gray-700 hover:bg-green-50 hover:text-green-600"
                             }`}
                           onClick={() => setOpenDropdown(null)}
                         >
@@ -165,9 +165,18 @@ export default function Navigation() {
                 )}
               </div>
             ))}
+             <Link
+              href="/partnership"
+              className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${pathname === "/partnership"
+                ? "bg-green-50 text-green-700"
+                : "text-gray-700 hover:text-green-600 hover:bg-green-50"
+                }`}
+            >
+              Partnership
+            </Link>
 
             <Link
-              href="/investors"
+              href="/coming-soon"
               className="ml-4 px-6 py-2 bg-gradient-to-r from-green-600 to-blue-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all"
             >
               WebApp
@@ -206,8 +215,8 @@ export default function Navigation() {
               <Link
                 href="/"
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${pathname === "/"
-                    ? "bg-green-50 text-green-700"
-                    : "text-gray-700 hover:text-green-600 hover:bg-green-50"
+                  ? "bg-green-50 text-green-700"
+                  : "text-gray-700 hover:text-green-600 hover:bg-green-50"
                   }`}
                 onClick={() => setIsOpen(false)}
               >
@@ -219,8 +228,8 @@ export default function Navigation() {
                 <div key={dropdown.label} className="space-y-1">
                   <button
                     className={`w-full px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-between ${isDropdownActive(dropdown)
-                        ? "bg-green-50 text-green-700"
-                        : "text-gray-700 hover:text-green-600 hover:bg-green-50"
+                      ? "bg-green-50 text-green-700"
+                      : "text-gray-700 hover:text-green-600 hover:bg-green-50"
                       }`}
                     onClick={() =>
                       setMobileOpenDropdown(
@@ -250,8 +259,8 @@ export default function Navigation() {
                             key={item.href}
                             href={item.href}
                             className={`block px-3 py-2 rounded-lg text-sm transition-colors ${isActive
-                                ? "bg-green-50 text-green-700"
-                                : "text-gray-600 hover:bg-green-50 hover:text-green-600"
+                              ? "bg-green-50 text-green-700"
+                              : "text-gray-600 hover:bg-green-50 hover:text-green-600"
                               }`}
                             onClick={() => {
                               setIsOpen(false);
@@ -266,9 +275,19 @@ export default function Navigation() {
                   )}
                 </div>
               ))}
+              <Link
+                href="/partnership"
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${pathname === "/partnership"
+                  ? "bg-green-50 text-green-700"
+                  : "text-gray-700 hover:text-green-600 hover:bg-green-50"
+                  }`}
+                onClick={() => setIsOpen(false)}
+              >
+                Partnership
+              </Link>
 
               <Link
-                href="/investors"
+                href="/coming-soon"
                 className="mt-4 px-6 py-3 bg-gradient-to-r from-green-600 to-blue-600 text-white rounded-lg font-semibold text-center hover:shadow-lg transition-all"
                 onClick={() => setIsOpen(false)}
               >

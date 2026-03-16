@@ -113,7 +113,7 @@ export default function BiocharPage() {
                   Partner With Us
                 </Link>
                 <Link
-                  href="/investors"
+                  href="#'"
                   className="px-6 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all"
                 >
                   Invest in Biochar

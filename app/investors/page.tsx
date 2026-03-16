@@ -21,7 +21,7 @@ export default function Investors() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button href="/contact?type=investor#contact-form" variant="primary" size="lg">
-                Download Full Deck
+                Request Full Deck
               </Button>
               <Button href="/contact?type=investor" variant="outline" size="lg">
                 Schedule Call
@@ -380,7 +380,7 @@ export default function Investors() {
                 <div className="mt-12 bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl p-8 md:p-12 text-center text-white">
                   <h3 className="text-3xl font-bold mb-4">Ready to Join?</h3>
                   <p className="text-xl mb-8 max-w-2xl mx-auto">
-                    Download our full investment deck or schedule a confidential investor call to discuss terms, data room access, and due diligence.
+                    Request our full investment deck or schedule a confidential investor call to discuss terms, data room access, and due diligence.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Button href="#" variant="secondary" size="lg">

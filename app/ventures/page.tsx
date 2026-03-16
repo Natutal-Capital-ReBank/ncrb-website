@@ -179,7 +179,7 @@ export default function VenturesPage() {
               Become a Partner
             </Link>
             <Link
-              href="/investors"
+              href="#'"
               className="px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-semibold hover:border-green-600 hover:text-green-600 transition-all"
             >
               Investor Information
