@@ -275,6 +275,16 @@ export default function Navigation() {
                   )}
                 </div>
               ))}
+              <Link
+                href="/partnership"
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${pathname === "/partnership"
+                  ? "bg-green-50 text-green-700"
+                  : "text-gray-700 hover:text-green-600 hover:bg-green-50"
+                  }`}
+                onClick={() => setIsOpen(false)}
+              >
+                Partnership
+              </Link>
 
               <Link
                 href="/coming-soon"
