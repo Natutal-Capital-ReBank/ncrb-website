@@ -55,7 +55,7 @@ export default function StablecoinPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-block mb-6">
             <span className="bg-teal-100 text-teal-800 text-sm font-semibold px-4 py-2 rounded-full">
-              Phase 2b — Q1 2027
+              Phase 2b — Q2 2028
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
