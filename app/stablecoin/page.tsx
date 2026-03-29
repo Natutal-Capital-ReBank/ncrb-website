@@ -291,10 +291,10 @@ export default function StablecoinPage() {
             <Button href="/coming-soon" variant="primary">
               Launch WebApp
             </Button>
-            <Button href="/proposals" variant="outline">
+            <Button href="/proposals" variant="secondary">
               Proposals Program
             </Button>
-            <Button href="/contact" variant="outline">
+            <Button href="/contact" variant="secondary">
               Contact Us
             </Button>
           </div>
