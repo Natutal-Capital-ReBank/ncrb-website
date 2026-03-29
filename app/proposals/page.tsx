@@ -263,10 +263,10 @@ export default function ProposalsPage() {
             <Button href="/stablecoin" variant="primary">
               Learn about NCSC
             </Button>
-            <Button href="/coming-soon" variant="outline">
+            <Button href="/coming-soon" variant="secondary">
               Launch WebApp
             </Button>
-            <Button href="/contact" variant="outline">
+            <Button href="/contact" variant="secondary">
               Contact Us
             </Button>
           </div>
