@@ -30,6 +30,8 @@ export default function Navigation() {
         { href: "/solution", label: "Solution" },
         { href: "/standards", label: "Standards" },
         { href: "/products", label: "Products" },
+        { href: "/stablecoin", label: "NCSC Stablecoin" },
+        { href: "/proposals", label: "Proposals Program" },
       ],
     },
     {
