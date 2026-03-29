@@ -251,7 +251,7 @@ export default function ProposalsPage() {
           </h2>
           <p className="text-gray-600 mb-4 leading-relaxed">
             The Proposals Program launches once NCSC is actively traded and regulatory approvals
-            for fiat redemption are in place. NCSC is planned for Phase 2b (v2.0.0, Q1 2027).
+            for fiat redemption are in place. NCSC is planned for Phase 2b (v2.0.0, Q2 2028).
             In the meantime, you can explore the NCRB platform, trade RWA tokens, and prepare
             for when your NCSC balance becomes your governance vote.
           </p>
