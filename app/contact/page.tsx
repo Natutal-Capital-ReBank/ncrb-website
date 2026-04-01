@@ -198,7 +198,7 @@ export default function Contact() {
                 12 Manomet Point Road, Suite 293<br />
                 Manomet, MA 02345-0293, USA<br />
                 <span className="mt-2 inline-block">T: <a href="tel:+17812662004" className="text-green-600 hover:underline">+1-781-266-2004</a></span><br />
-                <a href="mailto:NaturalCapitalRebank@gmail.com" className="text-green-600 hover:underline break-all">NaturalCapitalRebank@gmail.com</a>
+                <a href="mailto:info@NCRB.world" className="text-green-600 hover:underline break-all">info@NCRB.world</a>
               </p>
             </Card>
 

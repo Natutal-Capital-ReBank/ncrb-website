@@ -110,7 +110,7 @@ export default function PartnershipPage() {
       {/* Partnership Types Section */}
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl text-black font-bold text-center mb-12">
             Partnership Models
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -155,7 +155,7 @@ export default function PartnershipPage() {
       {/* Process Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl text-black font-bold text-center mb-12">
             Partnership Process
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
@@ -196,7 +196,7 @@ export default function PartnershipPage() {
       {/* Why Partner Section */}
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl text-black font-bold text-center mb-12">
             Why Partner With NCRB?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
