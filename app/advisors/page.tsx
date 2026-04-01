@@ -66,7 +66,7 @@ export default function AdvisorsPage() {
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-3xl text-black font-bold mb-4 text-black">
               Building Our Advisory Network
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -83,12 +83,12 @@ export default function AdvisorsPage() {
                 className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center"
               >
                 <div className="w-24 h-24 bg-gradient-to-r from-gray-200 to-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <svg className="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-12 h-12 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-400 mb-1">Coming Soon</h3>
-                <p className="text-gray-400 text-sm">Advisor Profile</p>
+                <h3 className="text-lg font-semibold text-gray-800 mb-1">Coming Soon</h3>
+                <p className="text-gray-800 text-sm">Advisor Profile</p>
               </div>
             ))}
           </div>
@@ -98,7 +98,7 @@ export default function AdvisorsPage() {
       {/* Expertise Areas */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4">
+          <h2 className="text-3xl text-black font-bold text-center mb-4">
             Areas of Expertise
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
@@ -108,7 +108,7 @@ export default function AdvisorsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {expertiseAreas.map((item, index) => (
               <div key={index} className="bg-gray-50 rounded-xl p-6 border border-gray-100">
-                <div className="text-3xl mb-4">{item.icon}</div>
+                <div className="text-3xl text-black mb-4">{item.icon}</div>
                 <h3 className="font-semibold text-gray-900 mb-2">{item.area}</h3>
                 <p className="text-gray-600 text-sm">{item.description}</p>
               </div>
@@ -123,7 +123,7 @@ export default function AdvisorsPage() {
           <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl p-8 md:p-12 text-white">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-4">
+                <h2 className="text-3xl text-white font-bold mb-4">
                   Interested in Advising NCRB?
                 </h2>
                 <p className="text-white/90 mb-6">
@@ -166,7 +166,7 @@ export default function AdvisorsPage() {
       {/* Team Link Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-4">Meet the Core Team</h2>
+          <h2 className="text-2xl text-black font-bold mb-4">Meet the Core Team</h2>
           <p className="text-gray-600 mb-6">
             Learn about the founders and team members building NCRB.
           </p>

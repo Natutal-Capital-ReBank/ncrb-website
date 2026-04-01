@@ -129,7 +129,7 @@ export default function VenturesPage() {
       {/* Why Ventures Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl text-black font-bold text-center mb-12">
             Why NCRB Ventures?
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
@@ -166,7 +166,7 @@ export default function VenturesPage() {
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Partner With Us</h2>
+          <h2 className="text-3xl text-black font-bold mb-6">Partner With Us</h2>
           <p className="text-gray-600 mb-8">
             Interested in developing natural capital projects or investing in our ventures?
             We&apos;re looking for project developers, landowners, and institutional investors.
