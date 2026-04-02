@@ -248,7 +248,7 @@ export default function Home() {
                 <ul className="space-y-3">
                   {col.items.map((item, i) => (
                     <li key={i} className="flex items-start">
-                      <span className="text-green-600 mr-2 mt-1">•</span>
+                      <span className="text-green-600 mr-2 flex-shrink-0">•</span>
                       <span className="text-gray-600">{item}</span>
                     </li>
                   ))}
