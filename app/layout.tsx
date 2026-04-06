@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import './globals.css'
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -124,7 +124,7 @@ export default function RootLayout({
               "description": "Blockchain-powered infrastructure transforming natural capital credits and ecosystem services into transparent, liquid digital instruments.",
               "sameAs": [
                 "https://x.com/NCRBplatform",
-                "https://www.linkedin.com/company/natural-capital-rebank/"
+                "https://www.linkedin.com/company/ncrbinc"
               ],
             }),
           }}
