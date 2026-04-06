@@ -54,7 +54,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/company/natural-capital-rebank/"
+                href="https://www.linkedin.com/company/ncrbinc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-blue-700 flex items-center justify-center transition-colors group focus:outline-none focus:ring-2 focus:ring-white"
@@ -140,7 +140,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">For Stakeholders</h3>
             <ul className="space-y-2">
-               {/* 
+              {/* 
               <li>
                 <Link href="#'" className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:underline">
                   For Investors
